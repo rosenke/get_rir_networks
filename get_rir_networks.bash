@@ -43,7 +43,7 @@ unset LANG
 ################################################################################
 
 # get CSV file with address assignments and save it locally
-wget --output-document "${csv_local}" "${csv_url}"
+wget --progress=dot --output-document "${csv_local}" "${csv_url}"
 
 # main loop over $rirs
 for i in ${rirs} ; do
