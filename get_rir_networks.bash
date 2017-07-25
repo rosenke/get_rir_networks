@@ -52,6 +52,9 @@ for i in ${rirs} ; do
   sed -re 's/^0+//;s/\/8$/.0.0.0&/' >"${i}.txt"
 done
 
+# show some statistics
+wc --lines *.txt
+
 #cleanup
 #n/a
 
